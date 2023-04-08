@@ -3,10 +3,10 @@
 <html lang="zh-cn">
 
 <head>
-    <title>三角星制作的网站</title>
+    <title>俊杰工作室-主页</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="keywords" content="Minecraft,MC,我的世界" />
+    <meta name="keywords" content="Minecraft,MC,我的世界,我的世界模组,我的世界mod" />
     <meta name="description" content="这是为一个我的世界mod制作工作室而制作的网页" />
     <meta name="robots" content="none" />
     <meta name="author" content="三角星" />
@@ -14,20 +14,207 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="icon" href="https://www.midorg.com/favicon.ico" type="image/x-icon" />
     <style>
-        .simple {
-            color: #39C5BB;
+        li:hover {
+            background-color: #becfd4;
         }
-
-        .type {
+        a:link {
+            text-decoration: none;
+            color: #000;
+        }
+        a:active {
+            text-decoration: blink;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #000;
+        }
+        a:visited {
+            text-decoration: none;
+            color: #000;
+        }
+        body{
+            box-sizing:border-box;
+            height:100vh;
+            margin:0;
+        }
+        .main {
+            display: flex;
+            width: 85%;
+            height: 100%;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            margin-left: 15%;
+            padding-left:30px;
+            position: relative;
+            font-family:inherit;
+        }
+        .members-list {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            width: 100%;
+            align-items: flex-start;
         }
+        .members {
+            display: flex;
+            flex-direction: row;
+            align-items:center;
+            width: 100%;
+        }
+        .members-list-avatar-show {
+            width: 86px;
+            height: 86px;
+            padding-right: 45px;
+            overflow: hidden;
+        }
+        .members-list-avatar {
+            border-radius: 50%;
+            width:100%;
+            height:100%;
+        }
+        .members-list-introduce {
+            font-family:inherit;
+        }
+        #side-bar {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 15%;
+            height: 100%;
+            position: fixed;
+            background-color: #f5f6fa;
+        }
+        #side-bar-header {
+        }
+        #side-bar-nav {
+            display: block;
+            width: 100%;
+            height: 70%;
+            padding-top: 15%;
+            padding-bottom: 25%;
+            font-family:inherit;
+        }
+        .side-bar-nav-list {
+            list-style-image: url(./resource/png/Creeper.png);
+            font-size: 18px;
+            vertical-align: middle;
+        }
+
     </style>
+
 </head>
 
 <body>
-    <logo class="type" style="width:100px;height:100px"></logo>
-    <p class="simple"><b>sdsasa</b>nihao</p>
+    <div id="side-bar">
+        <div id="side-bar-header">
 
-</body></html>
+        </div>
+        <div id="side-bar-nav">
+            <nav role="navigation">
+                <ul>
+                    <li class="side-bar-nav-list">
+                        <a href="/" target="_parent">
+                            <p>主页</p>
+                        </a>
+                    </li>
+                    <li class="side-bar-nav-list">
+                        <a href="/download" target="_parent">
+                            <p>模组下载</p>
+                        </a>
+                    </li>
+                    <li class="side-bar-nav-list">
+                        <a href="/log" target="_parent">
+                            <p>更新日志</p>
+                        </a>
+                    </li>
+                    <li class="side-bar-nav-list">
+                        <a href="/feedback" target="_parent">
+                            <p>问题反馈</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="main">
+        <h1>俊杰工作室-主页</h1>
+        <div class="introduce">
+            <p>做的<del>还好吧</del>（无底气</p>
+            <h2>什么是俊杰工作室</h2>
+            <p>俊杰工作室是一支由学生团体自发组建的MC模组制作工作室，工作室共五人，成立共1年</p>
+            <p>制作水平有限，请多谅解</p>
+        </div>
+        <div class="members-list">
+            <h2>制作成员名单</h2>
+            <div class="members">
+                <div class="members-list-avatar-show">
+                    <a href="https://space.bilibili.com/3493110222948960" target="_blank">
+                        <img src="https://i1.hdslb.com/bfs/face/58f7e2349790a9607cb95d28baaefd94f39c9d6a.jpg@120w_120h_1c.webp" alt="薛腐竹的主页" class="members-list-avatar" />
+                    </a>
+                </div>
+                <div class="members-list-introduce">
+                    <a href="https://space.bilibili.com/3493110222948960" target="_blank">
+                        <h2>模组制作：薛腐竹</h2>
+                    </a>
+                    <p>薛腐竹策划并制作了部分模组</p>
+                </div>
+            </div>
+            <div class="members">
+                <div class="members-list-avatar-show">
+                    <a href="https://space.bilibili.com/1052801577" target="_blank">
+                        <img src="https://i0.hdslb.com/bfs/face/fcc05af63c7ebce8e793003b5fe77684aa186f62.jpg@240w_240h_1c_1s.webp" alt="何家沐的主页" class="members-list-avatar" />
+                    </a>
+                </div>
+                <div class="members-list-introduce">
+                    <a href="https://space.bilibili.com/1052801577" target="_blank">
+                        <h2>模组制作：何家沐</h2>
+                    </a>
+                    <p>何家沐制作了部分模组并为其提供灵感</p>
+                </div>
+            </div>
+            <div class="members">
+                <div class="members-list-avatar-show">
+                    <a href="https://space.bilibili.com/2006435519" target="_blank">
+                        <img src="https://i2.hdslb.com/bfs/face/7f8a17747ff29f0894a3842fe172d46a3b1b1fdc.jpg@240w_240h_1c_1s.webp" alt="珏珏的主页" class="members-list-avatar" />
+                    </a>
+                </div>
+                <div class="members-list-introduce">
+                    <a href="https://space.bilibili.com/2006435519" target="_blank">
+                        <h2>美术设计：珏珏</h2>
+                    </a>
+                    <p>珏珏负责所有的美术设计</p>
+                </div>
+            </div>
+            <div class="members">
+                <div class="members-list-avatar-show">
+                    <a href="https://space.bilibili.com/1217335516" target="_blank">
+                        <img src="https://i1.hdslb.com/bfs/face/0ddf7a34f68356bf9f549eb2b6f05e3cb2370e88.jpg@240w_240h_1c_1s.webp" alt="墨西哥人肉卷的主页" class="members-list-avatar" />
+                    </a>
+                </div>
+                <div class="members-list-introduce">
+                    <a href="https://space.bilibili.com/1217335516" target="_blank">
+                        <h2>模组测试；墨西哥人肉卷</h2>
+                    </a>
+                    <p>墨西哥人肉卷测试所有成品</p>
+                </div>
+            </div>
+            <div class="members">
+                <div class="members-list-avatar-show">
+                    <a href="https://space.bilibili.com/1386587602" target="_blank">
+                        <img src="https://i1.hdslb.com/bfs/face/58f7e2349790a9607cb95d28baaefd94f39c9d6a.jpg@120w_120h_1c.webp" alt="三角星的主页" class="members-list-avatar" />
+                    </a>
+                </div>
+                <div class="members-list-introduce">
+                    <a href="https://space.bilibili.com/1386587602" target="_blank">
+                        <h2>网页制作：三角星</h2>
+                    </a>
+                    <p>三角星制作了整个网页</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
